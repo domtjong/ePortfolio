@@ -90,6 +90,7 @@
           </div>
         </div>
       </header>
+    </section>
 
       <button class="mail__btn click">
         <i class="fa-solid fa-envelope "></i>
@@ -98,12 +99,11 @@
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
-    </section>
 
       <div class="modal">
         <div class="modal__half modal__about">
-          <h3 class="modal">Here's a bit about me</h3>
-          <h4 class="about__role">Aspiring Front End Developer</h4>
+          <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+          <h4 class="modal__sub-title">Aspiring Front End Developer</h4>
           <p class="about__para">
             I'm currently studying a Bachelor of Engineering at The University
             of Technology Sydney. I have been working on Front-End Engineering
@@ -111,72 +111,68 @@
             the current market by building aesthetic and functional websites and
             projects
           </p>
-        </div>
-        <div class="modal__languages">
-          <figure class="tech__image">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/8/82/Devicon-html5-plain.svg"
-              class="tech__image--img"
-              alt="html5"
-            />
-            <span class="tech__name">HTML</span>
-          </figure>
-        </div>
-        <div class="modal__languages">
-          <figure class="tech__image">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-              class="tech__image--img"
-              alt="css"
-            />
-            <span class="tech__name">CSS3</span>
-          </figure>
-        </div>
-        <div class="modal__languages">
-          <figure class="tech__image">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
-              class="tech__image--img"
-              alt="javascript"
-            />
-            <span class="tech__name">JavaScript</span>
-          </figure>
-        </div>
-        <div class="modal__languages">
-          <figure class="tech__image">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-              class="tech__image--img"
-              alt="react"
-            />
-            <span class="tech__name">React</span>
-          </figure>
-        </div>
-        <div class="modal__half modal__contact">
-          <i></i>
-          <h3>Let's have a chat!</h3>
-          <h3>I'd love to hear from you.</h3>
-          <form onsubmit="contact(event)" id="contact__form">
-            <div>
-              <label>Name</label>
-              <input name="user_name" type="text" required />
-            </div>
-            <div>
-              <label>Email</label>
-              <input name="user_email" type="email" required />
-            </div>
-            <div>
-              <label>Message</label>
-              <textarea name="message" type="text" required> </textarea>
-            </div>
-            <button id="contact__submit">Send it my way</button>
-          </form>
           <div>
-            <i></i>
+            <div class="modal__languages"> 
+                <figure class="tech__image">
+                  <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/82/Devicon-html5-plain.svg"
+                  class="tech__image--img"
+                  alt="html5"
+                  />
+                  <span class="tech__name">HTML</span>
+                </figure>
+                <figure class="tech__image">
+                  <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                  class="tech__image--img"
+                  alt="css"
+                  />
+                  <span class="tech__name">CSS3</span>
+                </figure>
+                <figure class="tech__image">
+                  <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
+                  class="tech__image--img"
+                  alt="javascript"
+                  />
+                  <span class="tech__name">JavaScript</span>
+                </figure>
+                <figure class="tech__image">
+                  <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+                  class="tech__image--img"
+                  alt="react"
+                  />
+                  <span class="tech__name">React</span>
+                </figure>
+            </div>
+        </div>
           </div>
-          <div>
-            Thanks for the message! Looking forward to speaking to you soon.
-          </div>
+            <div class="modal__half modal__contact">
+              <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+              <h3 class="modal__title">Let's have a chat!</h3>
+              <h3 class="modal__sub-title">I'd love to hear from you.</h3>
+                <form onsubmit="contact(event)" id="contact__form">
+                  <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input name="user_name" type="text" required />
+                  </div>
+                  <div class="form__item">
+                    <label class="form__item--label">Email</label>
+                    <input name="user_email" type="email" required />
+                  </div>
+                  <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="message" type="text" required> </textarea>
+                  </div>
+                    <button id="contact__submit" class="form__submit">Send it my way</button>
+                </form>
+            <div class="modal__overlay modal__overlay--loading">
+              <i class="fas fa-spinner"></i>
+            </div>
+              <div class="modal__overlay modal__overlay--success">
+                Thanks for the message! Looking forward to speaking to you soon.
+              </div>
         </div>
       </div>
     </section>
@@ -233,5 +229,11 @@
 
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://kit.fontawesome.com/c27848ed43.js" crossorigin="anonymous"></script>  <script src="index.js"></script>
+  <script src="https://kit.fontawesome.com/c27848ed43.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <script>
+    (function () {
+        emailjs.init("aamWpQoPDNxdqQc_G");
+    })();
+  </script>
 </html>

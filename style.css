@@ -248,7 +248,7 @@ button {
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 
-.modal--open {
+.modal--open .modal {
   z-index: 60;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.5);
   visibility: visible;
@@ -264,6 +264,11 @@ button {
   transition: all 300ms ease-in;
 }
 
+.modal--open .modal__about,
+.modal--open .modal__contact {
+  transform: translateX(0%);
+}
+
 .modal__about {
   background-color: white;
   transform: translateX(-110%);
@@ -271,7 +276,153 @@ button {
 
 .modal__contact {
   background-color: black;
-  transform: translateX(-110%);
+  color: white;
+  transform: translateX(110%);
+}
+
+.modal__title {
+  font-size: 26px;
+}
+
+.modal__sub-title {
+  font-size: 14px;
+  margin: 12px 0 24px 0;
+}
+
+.about__para {
+  margin-bottom: 12px;
+  line-height: 1.75;
+}
+
+.modal__languages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tech__image {
+  width: 25%;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tech__image:hover .tech__name {
+  transform: scale(1);
+}
+
+.tech__image:hover {
+  transform: scale(0.85);
+  filter: brightness(80%);
+}
+
+.tech__name {
+  position: absolute;
+  bottom: -10px;
+  transform: scale(0);
+  transition: all 300ms ease;
+}
+
+.tech__image--img {
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: black;
+  color: white;
+  outline: none;
+  border: 1px solid;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  transition: all 300ms ease;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+  margin-top: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__submit {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  font-weight: 700;
+  width: 100%;
+  max-width: 240px;
+  padding: 12px 14px;
+  font-size: 20px;
+  transition: all 300ms ease;
+}
+
+.form__submit:hover {
+  border: orangered;
+  background-color: orangered;
+  transition: all 300ms 200ms ease;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.modal__overlay--loading {
+  background-color: black;
+  font-size: 80px;
+}
+
+.modal__overlay--success {
+  background-color: forestgreen;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  padding: 28px;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
+  display: flex;
+}
+
+.modal__exit {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: white;
+  font-size: 36px;
+  z-index: 100;
+}
+
+.fa-spinner {
+  animation: spinner 1000ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* --- LANDING PAGE --- */
