@@ -17,13 +17,22 @@ function toggleContrast() {
 
 /* TOGGLE CONTACT MODAL */
 
-function toggleModal() {
+function toggleModalA() {
   if (isModalOpen) {
     isModalOpen = false;
-    return document.body.classList.remove("modal--open");
+    return document.body.classList.remove("modal--openA");
   }
   isModalOpen = true;
-  document.body.classList += "modal--open";
+  document.body.classList += "modal--openA";
+}
+
+function toggleModalB() {
+  if (isModalOpen) {
+    isModalOpen = false;
+    return document.body.classList.remove("modal--openB");
+  }
+  isModalOpen = true;
+  document.body.classList += "modal--openB";
 }
 
 /* EMAIL CONTACT */

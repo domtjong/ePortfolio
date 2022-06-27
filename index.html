@@ -16,7 +16,7 @@
           <img id="personal-logo" src="/assets/personalLogo.png" alt="logo" />
         </figure>
         <ul class="nav__list" id="nav__list">
-          <li class="nav__list" onclick="toggleModal()">
+          <li class="nav__list" onclick="toggleModalA()">
             <a
               href="#"
               class="nav__link--anchor link__hover--effect link__hover--effect--black"
@@ -37,7 +37,7 @@
               >Hobbies</a
             >
           </li>
-          <li class="nav__list" onclick="toggleModal()">
+          <li class="nav__list" onclick="toggleModalB()">
             <a
               href="#"
               class="nav__link--anchor link__hover--effect link__hover--effect--black"
@@ -92,7 +92,7 @@
       </header>
     </section>
 
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModalB()">
         <i class="fa-solid fa-envelope "></i>
       </button>
 
@@ -100,8 +100,8 @@
         <div class="scroll__icon click"></div>
       </a>
 
-      <div class="modal">
-        <div class="modal__half modal__about">
+      <div class="modal__a">
+        <div class="modal__half modal__about2">
           <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
           <h4 class="modal__sub-title">Aspiring Front End Developer</h4>
           <p class="about__para">
@@ -109,7 +109,7 @@
             of Technology Sydney. I have been working on Front-End Engineering
             side projects. I learn new technologies and skills to keep up with
             the current market by building aesthetic and functional websites and
-            projects
+            projects. 
           </p>
           <div>
             <div class="modal__languages"> 
@@ -148,8 +148,25 @@
             </div>
         </div>
           </div>
-            <div class="modal__half modal__contact">
-              <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <div>
+          <div class="modal__half modal__about">
+            <i class="fas fa-times modal__exit--black click" onclick="toggleModalA()"></i>
+            <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
+            <h4 class="modal__sub-title">Aspiring Front End Developer</h4>
+            <p class="about__para">
+              I'm currently studying a Bachelor of Engineering at The University
+              of Technology Sydney. I have been working on Front-End Engineering
+              side projects. I learn new technologies and skills to keep up with
+              the current market by building aesthetic and functional websites and
+              projects. 
+            </p>
+            <div>
+        </div>
+      </div>
+
+      <div class="modal__b">
+          <div class="modal__contact">
+            <i class="fas fa-times modal__exit--white click" onclick="toggleModalB()"></i>
               <h3 class="modal__title">Let's have a chat!</h3>
               <h3 class="modal__sub-title">I'd love to hear from you.</h3>
                 <form onsubmit="contact(event)" id="contact__form">
