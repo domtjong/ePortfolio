@@ -9,7 +9,7 @@ AOS.init();
 function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
-    document.body.classList += "dark--theme";
+    document.body.classList += " dark--theme";
   } else {
     document.body.classList.remove("dark--theme");
   }
@@ -23,7 +23,7 @@ function toggleModal1() {
     return document.body.classList.remove("modal--open1");
   }
   isModalOpen = true;
-  document.body.classList += "modal--open1";
+  document.body.classList += " modal--open1";
 }
 
 function toggleModal2() {
@@ -32,7 +32,7 @@ function toggleModal2() {
     return document.body.classList.remove("modal--open2");
   }
   isModalOpen = true;
-  document.body.classList += "modal--open2";
+  document.body.classList += " modal--open2 ";
 }
 
 /* EMAIL CONTACT */

@@ -30,13 +30,6 @@
               >Projects</a
             >
           </li>
-          <li class="nav__list">
-            <a
-              href="#hobbies"
-              class="nav__link--anchor link__hover--effect link__hover--effect--black"
-              >Hobbies</a
-            >
-          </li>
           <li class="nav__list" onclick="toggleModal2()">
             <a
               href="#"
@@ -60,7 +53,7 @@
           data-aos-duration="1000"
         >
           <h1 class="title">Hello!</h1>
-          <h1 class="title">I'm <b class="title orange">Dominic Tjong.</b></h1>
+          <h1 class="title">I'm <b class="orange">Dominic Tjong.</b></h1>
           <p class="header__para" id="=headerpara">
             I'm a
             <b class="orange">Frontend Developer</b>
@@ -102,14 +95,21 @@
 
       <div class="modal1">
         <div class="modal__half modal__about--left">
+          <figure class="me__image">
+            <img 
+            src="/assets/me.png"
+            class= "me__image--img"
+            alt="me"
+            />
+          </figure>
           <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
           <h4 class="modal__sub-title">Aspiring Front End Developer</h4>
           <p class="about__para">
             I'm currently studying a Bachelor of Engineering at The University
-            of Technology Sydney. I have been working on Front-End Engineering
+            of Technology Sydney. I have been working on an array of Front-End and Back-End Engineering
             side projects. I learn new technologies and skills to keep up with
             the current market by building aesthetic and functional websites and
-            projects
+            projects.
           </p>
           <div>
             <div class="modal__languages"> 
@@ -151,9 +151,20 @@
 
         <div class="modal__half modal__about--right">
           <i class="fas fa-times modal__exit--white click" onclick="toggleModal1()"></i>
-             <div>
-               <img src="" alt="">
-             </div>
+            <h3 class="modal__title modal__title--about">My Hobbies</h3>
+            <h4 class="modal__sub-title">Volleyball</h4>
+            <p class="about__para">
+              I've been playing volleyball for almost 8 years and have had the opportunity to represent UTS at UniGames 2019 before COVID. 
+              I love playing as a team and working together for a common goal.
+            </p>
+          <figure class="volleyball__image">
+          <img 
+          src="/assets/volleyballTeam.jpg"
+          class= "volleyball__image--img"
+          alt="volleyball"
+          />
+          <span class="volleyball__name">UniGames 2019 - Gold Coast<p class="volleyball__position">(Top Left)</p></span>
+          </figure>
         </div>
       </div>
     </section>
@@ -213,31 +224,13 @@
         </div>
     </section>
 
-    <section id="hobbies">
-        <div
-            class="container"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="1000">
-            <div class="row">
-                <h1 class="section__title">
-                    My <span class="orange">Hobbies.</span>
-                </h1>
-                <ul>
-                    <li>
-                        Volleyball
-                    </li>
-                    <li>
-                        Boardgames
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
   </body>
   <footer>
+    <div class>
+        <div>
 
+        </div>
+    </div>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/c27848ed43.js" crossorigin="anonymous"></script>
