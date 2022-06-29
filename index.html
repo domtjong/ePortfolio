@@ -68,7 +68,7 @@
             experience.
             <br/>
             Here's a bit more
-            <b class="orange click link__hover--effect link__hover--effect--orange" onclick="toggleModal()">about me</b>.
+            <b class="orange click link__hover--effect link__hover--effect--orange" onclick="toggleModal1()">about me</b>.
           </p>
           <div class="social__list">
             <a
@@ -93,7 +93,7 @@
     </section>
 
       <button class="mail__btn click">
-        <i class="fa-solid fa-envelope "></i>
+        <i class="fa-solid fa-envelope" onclick="toggleModal2()"></i>
       </button>
 
       <a href="#projects" class="scroll">
@@ -150,60 +150,17 @@
         </div>
 
         <div class="modal__half modal__about--right">
-          <i class="fas fa-times modal__exit click" onclick="toggleModal1()"></i>
+          <i class="fas fa-times modal__exit--white click" onclick="toggleModal1()"></i>
              <div>
-              
+               <img src="" alt="">
              </div>
         </div>
       </div>
     </section>
 
     <div class="modal2">
-      <div class="modal__half modal__contact--left">
-        <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
-        <h4 class="modal__sub-title">Aspiring Front End Developer</h4>
-        <p class="about__para">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt molestiae repellat temporibus sapiente amet aliquam voluptatem rem laudantium earum dolores.
-        </p>
-        <div>
-          <div class="modal__languages"> 
-              <figure class="tech__image">
-                <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/82/Devicon-html5-plain.svg"
-                class="tech__image--img"
-                alt="html5"
-                />
-                <span class="tech__name">HTML</span>
-              </figure>
-              <figure class="tech__image">
-                <img
-                src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-                class="tech__image--img"
-                alt="css"
-                />
-                <span class="tech__name">CSS3</span>
-              </figure>
-              <figure class="tech__image">
-                <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
-                class="tech__image--img"
-                alt="javascript"
-                />
-                <span class="tech__name">JavaScript</span>
-              </figure>
-              <figure class="tech__image">
-                <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-                class="tech__image--img"
-                alt="react"
-                />
-                <span class="tech__name">React</span>
-              </figure>
-          </div>
-      </div>
-        </div>
-          <div class="modal__half modal__contact--right">
-            <i class="fas fa-times modal__exit click" onclick="toggleModal2()"></i>
+          <div class="modal__contact">
+            <i class="fas fa-times modal__exit--black click" onclick="toggleModal2()"></i>
             <h3 class="modal__title">Let's have a chat!</h3>
             <h3 class="modal__sub-title">I'd love to hear from you.</h3>
               <form onsubmit="contact(event)" id="contact__form">
