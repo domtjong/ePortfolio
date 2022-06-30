@@ -201,26 +201,62 @@
 
     <section id="projects">
         <div
-            class="container"
-            data-aos="fade-up"
-            data-aos-delay="0"
-            data-aos-duration="1000">
-            <div class="row">
-                <h1 class="section__title">
-                    Here are my current <span class="orange">Projects.</span>
-                </h1>
-                <ul>
-                    <li>
-                        Project 1
-                    </li>
-                    <li>
-                        Project 2
-                    </li>
-                </ul>
+          class="container"
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000">
 
-
-
+            <h1 class="section__title">My <b class="orange">Projects</b></h1>
+            <div class="project__slider">
+              <figure class="project__img--wrapper">
+                  <div class="project__background">
+                      <div class="project__links">
+                          <a href="" target="_blank">
+                              <i class="fas fa-link"></i>
+                          </a>
+                          <a href="" target="_blank">
+                              <i class="fab fa-github"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <img id="placeholder" src="/assets/landingPage.png" alt="">
+                  <img class="project__img" style="z-index: 1" src="/assets/landingPage.png" alt="project-1">
+                  <img class="project__img" src="/assets/landingPage.png" alt="project-2">
+                  <img class="project__img" src="/assets/landingPage.png" alt="project-3">
+              </figure>
+              <button id="previous" class="click" onclick="previousItem(event)">
+                  <i class="fas fa-chevron-circle-left"></i>
+              </button>
+              <button id="next" class="click" onclick="nextItem(event)">
+                  <i class="fas fa-chevron-circle-right"></i>
+              </button>
             </div>
+            
+            
+            <div class="project__description">
+              <div class="project project-1">
+                <h1>Project 1</h1>
+                <h2>Languages Used</h2>
+                <p>Description Lorem ipsum dolor, sit amet consectetur adipisicing 
+                  elit. Dolorem quis excepturi culpa debitis, aliquam temporibus 
+                  sunt ipsum possimus animi veniam?</p>
+              </div>
+              <div class="project project-2">
+                <h1>Project 2</h1>
+                <h2>Languages Used</h2>
+                <p>Description Lorem ipsum dolor, sit amet consectetur adipisicing 
+                  elit. Dolorem quis excepturi culpa debitis, aliquam temporibus 
+                  sunt ipsum possimus animi veniam?</p>
+              </div>
+              <div class="project project-3">
+                <h1>Project 3</h1>
+                <h2>Languages Used</h2>
+                <p>Description Lorem ipsum dolor, sit amet consectetur adipisicing 
+                  elit. Dolorem quis excepturi culpa debitis, aliquam temporibus 
+                  sunt ipsum possimus animi veniam?</p>
+              </div>
+            </div>
+
         </div>
     </section>
 
