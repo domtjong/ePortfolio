@@ -212,10 +212,10 @@
                   <div class="project__background">
                       <div class="project__links">
                           <a href="" target="_blank">
-                              <i class="fas fa-link"></i>
+                              <i class="fas fa-link project__link"></i>
                           </a>
                           <a href="" target="_blank">
-                              <i class="fab fa-github"></i>
+                              <i class="fab fa-github project__link"></i>
                           </a>
                       </div>
                   </div>
@@ -231,41 +231,66 @@
                   <i class="fas fa-chevron-circle-right"></i>
               </button>
             </div>
-            
-            
-            <div class="project__description">
+            <div class="project__indicators">
+              <div class="project__indicator indicator-1 filled"></div>
+              <div class="project__indicator indicator-2"></div>
+              <div class="project__indicator indicator-3"></div>
+            </div>
+            <div class="project__description--wrapper p1">
               <div class="project project-1">
-                <h1>Project 1</h1>
-                <h2>Languages Used</h2>
-                <p>Description Lorem ipsum dolor, sit amet consectetur adipisicing 
+                <h1 class="project__title">Project 1</h1>
+                <h2 class="project__language">Languages Used</h2>
+                <p class="project__description">Description Lorem ipsum dolor, sit amet consectetur adipisicing 
                   elit. Dolorem quis excepturi culpa debitis, aliquam temporibus 
                   sunt ipsum possimus animi veniam?</p>
               </div>
               <div class="project project-2">
-                <h1>Project 2</h1>
-                <h2>Languages Used</h2>
-                <p>Description Lorem ipsum dolor, sit amet consectetur adipisicing 
+                <h1 class="project__title">Project 2</h1>
+                <h2 class="project__language">Languages Used</h2>
+                <p class="project__description">Description Lorem ipsum dolor, sit amet consectetur adipisicing 
                   elit. Dolorem quis excepturi culpa debitis, aliquam temporibus 
                   sunt ipsum possimus animi veniam?</p>
               </div>
               <div class="project project-3">
-                <h1>Project 3</h1>
-                <h2>Languages Used</h2>
-                <p>Description Lorem ipsum dolor, sit amet consectetur adipisicing 
+                <h1 class="project__title">Project 3</h1>
+                <h2 class="project__language">Languages Used</h2>
+                <p class="project__description">Description Lorem ipsum dolor, sit amet consectetur adipisicing 
                   elit. Dolorem quis excepturi culpa debitis, aliquam temporibus 
                   sunt ipsum possimus animi veniam?</p>
               </div>
             </div>
-
         </div>
     </section>
 
   </body>
   <footer>
-    <div class>
-        <div>
-
-        </div>
+    <div class="container">
+      <div
+        class="row footer_row"
+        data-aos="fade-up"
+        data-aos-delay="0"
+        data-aos-duration="1000"
+      >
+          <div class="row-2">
+            <div class="footer__logo--wrapper">
+                <a href="#">
+                  <img id="footer-logo" src="/assets/personalLogo.png" alt="logo" class="click">
+                </a>
+            </div>
+            <div class="footer__links">
+                <a href="https://www.linkedin.com/in/dominic-tjong-b69a20213" target="_blank">
+                    <i class="fab fa-linkedin-in click"></i>
+                </a>
+                <a href="https://github.com/domtjong" target="_blank">
+                    <i class="fab fa-github click"></i>
+                </a>
+                <a href="/assets/Dominic_Tjong_Resume.pdf" target="_blank">
+                    <i class="fa-regular fa-file-lines click"></i>
+                </a>
+            </div>
+          </div>
+        <div class="footer__copyright">Copyright © 2022</div>
+      </div>
     </div>
   </footer>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
