@@ -843,3 +843,44 @@ footer .row-2 {
 }
 
 /* DIFFERENT SCREENS */
+@media (max-width: 760px) {
+  
+}
+
+@media (max-width: 560px) {
+  
+}
+
+@media (max-width: 480px) {
+    .title {
+      font-size: 36px;
+    }
+    .header__para {
+      font-size: 18px;
+    }
+    .mail__btn {
+      font-size: 24px;
+      height: 56px;
+      width: 56px;
+      margin-bottom: 30px;
+    }
+    .scroll__icon {
+      margin-bottom: 30px;
+    }
+    .click:hover {
+      transform: scale(1);
+    }
+    .social__link {
+      margin-right: 24px;
+      height: 38px;
+      width: 38px;
+      font-size: 16px;
+    }
+    .nav__list:nth-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 360px) {
+  
+}
